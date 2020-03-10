@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Andzix the Game">
+        <meta name="keywords" content="HTML, JS, CSS, GRA, SUPERGRA">
+        <meta name="author" content="ekipa">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style_zse.css">
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Knewave|Krona+One|Monofett|Nosifer|Oldenburg|Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wybierz_tlo">
+            <p> WYBIERZ TŁO: </p>
+        </div>
+        
+            <div class="kontener_gry">    
+               
+                <button class="tlo_gry"> <div class="ramka_tla"> <input onclick="wyczysc()" type="image" src="zse.jpg" width="450" height="450"></div></button> 
+               
+                <button class="tlo2_gry"> <div class="ramka2_tla"><input onclick="wyczysc2()" type="image" src="biedra.jpg" width="450" height="450"></div></button> 
+               
+                <button class="tlo3_gry"> <div class="ramka3_tla"><input onclick="wyczysc3()" type="image" src="mostostal.jpg" width="450" height="450"></div> </button>
+                </div> 
+                
+                
+
+
+                
+             
+                    <div class="kontener_tla">  
+                    <div class="tlo_gry"> <img src="zse.jpg"  width = "1344" height = "764"> </div></div>
+                    <div class="kontener2_tla">       
+                    <div class="tlo2_gry"><img src="biedra.jpg" width = "1344" height = "764"> </div></div>
+                    <div class="kontener3_tla">
+                    <div class="tlo3_gry"> <img  src="mostostal.jpg" width = "1344" height = "764"> </div> </div> 
+                  
+            
+    <script>
+
+           
+            const wybierz_tlo = document.querySelector(".wybierz_tlo"); // zadeklarowanie obiektów w kodzie js
+            const kontener_gry = document.querySelector(".kontener_gry"); // zadeklarowanie obiektów w kodzie js
+            const kontener_tla = document.querySelector(".kontener_tla"); // zadeklarowanie obiektów w kodzie js  
+            const kontener2_tla = document.querySelector(".kontener2_tla"); // zadeklarowanie obiektów w kodzie js  
+            const kontener3_tla = document.querySelector(".kontener3_tla"); // zadeklarowanie obiektów w kodzie js  
+
+
+            kontener_tla.style.display = "none";
+            kontener2_tla.style.display = "none";
+            kontener3_tla.style.display = "none";
+        ;
+
+     function wyczysc()
+            {
+               
+                wybierz_tlo.style.display = "none";
+                kontener_gry.style.display = "none";
+
+                kontener_tla.style.display = "block";
+               
+              
+            }
+
+            function wyczysc2()
+            {
+               
+                wybierz_tlo.style.display = "none";
+                kontener_gry.style.display = "none";
+
+                kontener2_tla.style.display = "block";
+               
+              
+            }
+
+            function wyczysc3()
+            {
+               
+                wybierz_tlo.style.display = "none";
+                kontener_gry.style.display = "none";
+
+                kontener3_tla.style.display = "block";
+               
+              
+            }
+    
+</script>
+
+
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Andzix the Game">
+        <meta name="keywords" content="HTML, JS, CSS, GRA, SUPERGRA">
+        <meta name="author" content="ekipa">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Knewave|Krona+One|Monofett|Nosifer|Oldenburg|Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="andzix_the_game">
+            <p> ANDZIX THE GAME </p>
+        </div>
+        
+        <div class="start"> 
+            <button class="button" onclick="wyczysc()" type="button" style="vertical-align:middle"> 
+                <span>START</span>
+            </button>
+        </div>
+
+        <div class="wybierz_gre"> 
+            <p>SELECT THE GAME:</p>
+        </div>
+ 
+        
+
+        <div class="kontener_na_gry">
+            <div class="gra01 input"> <a href="strona_zse.html"><input onclick="gra01()" type="image" src="zse.jpg" width="400" height="400"></a> </div> 
+            <div class="gra02 input"> <a href="gra strzelanka\gra_strzelanka.html"><input onclick="gra01()" type="image" src="mostostal.jpg" width="400" height="400"></a> </div>
+            
+        </div>
+
+        
+        <script>
+            const andzix_the_game = document.querySelector(".andzix_the_game"); // zadeklarowanie obiektów w kodzie js
+            const przycisk = document.querySelector(".button"); // zadeklarowanie obiektów w kodzie js
+            const wybierz_gre = document.querySelector(".wybierz_gre"); // zadeklarowanie obiektów w kodzie js
+            const kontener_na_gry = document.querySelector(".kontener_na_gry"); // zadeklarowanie obiektów w kodzie js
+            
+            wybierz_gre.style.display = "none";
+            kontener_na_gry.style.display = "none";
+
+            function wyczysc()
+            {
+                przycisk.style.display = "none"; // znikniecie przycisku i uruchomieie gry
+                andzix_the_game.style.display = "none"; // znikniecie przycisku i uruchomieie gry
+                wybierz_gre.style.display = "block";
+                kontener_na_gry.style.display = "block";
+                
+            }
+
+            
+            
+
+            
+
+        </script>
+
+
+    </body>
+</html>

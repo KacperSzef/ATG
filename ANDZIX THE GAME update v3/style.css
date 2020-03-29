@@ -1,0 +1,213 @@
+      *{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+
+.start a{
+    text-decoration: none;
+}
+
+
+body{
+    background: url(https://i.pinimg.com/originals/e2/6f/ba/e26fba8d9f2102d2dd8699c80b8ddc78.jpg);
+}
+
+/* ---------------------------------------------NAPIS ANDZIX THE GAME-------------------------------------------------------- */
+.andzix_the_game{
+    width: 100%;
+    height: 10px;
+    text-align: center;
+    margin: 10% auto;
+    font-size: 5rem;
+    letter-spacing: 6px;
+    font-weight: bold;
+    font-family: 'Nosifer', cursive;
+    position: relative;
+    animation: smooth 3s linear 1s both;
+}
+
+.andzix_the_game p{
+    background: linear-gradient(to left, rgb(185, 0, 4), rgb(82, 0, 246));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------/////PRZYCISK START/////-------------------------------------------------------- */
+
+/* .start button{
+    display: block;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    font-size: 4.5rem;
+    margin: 1% auto;
+    padding: 10px 20px;
+    font-family: 'Alfa Slab One', cursive;
+    background-color: wheat;
+}
+
+.start button{
+    display: block;
+    background: linear-gradient(to left, rgb(185, 0, 4), rgb(82, 0, 246));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------PRZYCISK START-------------------------------------------------------- */
+.start{
+    width: 300px;
+    height: 100px;
+    margin: 1% auto;
+}
+
+.button{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Krona One', sans-serif;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1% auto;
+    animation: smooth 3s linear 1s both;
+}
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  /* -------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------WYBIERZ_GRE------------------------------------------------------------------ */
+   
+  .wybierz_gre{
+    padding-top: 5rem;
+    width: 100%;
+    height: 10px;
+    text-align: center;
+    /* margin: 1% auto; */
+    font-size: 5rem;
+    letter-spacing: 6px;
+    font-weight: bold;
+    font-family: 'Nosifer', cursive;
+    top: 1%;
+    position: absolute; 
+    animation: smooth 2s linear 1s both;
+    
+  } 
+
+  .wybierz_gre p{
+    background: linear-gradient(to left, rgb(185, 0, 4), rgb(82, 0, 246));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+  }
+   
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------KONTENER NA GRY------------------------------------------------------------------------- */
+.kontener_na_gry{
+    /* background-color: violet; */
+    width: 100%;
+    height: 100%;
+    margin: 150px auto;
+    animation: smooth 3s linear 1s both;
+    
+    position: relative;
+}
+
+.gra01 input{
+    float: left;
+    border: 5px solid rgba(201, 75, 35, 0.6);
+    border-radius: 6px;
+    margin-right: 30px;
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    top: 90%;
+    right: 52%;
+    transition: background-color .1s ease-in-out, border-width .2s ease-in-out;
+    
+}
+
+.gra02 input{
+    float: left;
+    border: 5px solid rgba(201, 75, 35, 0.6);
+    border-radius: 6px;
+    margin-right: 30px;
+    position: absolute;
+    top: 90%;
+    left: 52%;
+    width: 550px;
+    height: 550px;
+    transition: background-color .1s ease-in-out, border-width .2s ease-in-out;
+    
+    
+    
+}
+
+
+
+.gra01 input:hover, .gra02 input:hover, {
+  background-color: red;   
+  border-width: 8px;
+}
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------ANIMACJE---------------------------------------------------------------------- */
+@keyframes smooth{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+
+
